@@ -29,5 +29,10 @@ function sumRecursion(list, num){
 }
 
 function sumTheSimpleWay(list) {
-    return _.reduce(list, function(memo, num){ return memo + num; }, 0);
+    return _.reduce(list, (memo, num) => {
+      return memo + num;
+    }, 0);
 }
+
+let myarr = [1, 2, 3];
+console.log(sumFor(myarr)+sumWhile(myarr)+sumRecursion(myarr, myarr.length-1)+ sumTheSimpleWay(myarr));
